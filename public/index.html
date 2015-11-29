@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>2016 Presidential Race Twitter Feed</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="header-container">
+      <div class="header box">
+        <h1>2016 Presidential Race Twitter Feed</h1>
+        <button type="button" class="btn btn-default" id="button-toggle"><span class="glyphicon glyphicon-stats"></span>
+          Toggle Charts</button>
+        <button type="button" class="btn btn-default" id="button-about"><span class="glyphicon glyphicon-info-sign"></span>
+          About</button>
+      </div>
+    </div>
+
+    <div class="candidate-container left">
+      <div class="box candidate dem" data-candidate="clinton">
+        <h2>Clinton</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="clinton-markers" checked>
+          <label class="onoffswitch-label" for="clinton-markers"></label>
+        </div>
+        <img src="img/clinton.png"></img>
+      </div>
+      <div class="box candidate dem" data-candidate="sanders">
+        <h2>Sanders</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="sanders-markers" checked>
+          <label class="onoffswitch-label" for="sanders-markers"></label>
+        </div>
+        <img src="img/sanders.png"></img>
+      </div>
+      <div class="box candidate rep" data-candidate="trump">
+        <h2>Trump</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="trump-markers" checked>
+          <label class="onoffswitch-label" for="trump-markers"></label>
+        </div>
+        <img src="img/trump.png"></img>
+      </div>
+      <div class="box candidate rep" data-candidate="carson">
+        <h2>Carson</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="carson-markers" checked>
+          <label class="onoffswitch-label" for="carson-markers"></label>
+        </div>
+        <img src="img/carson.png"></img>
+      </div>
+
+      <div class="box">
+
+      </div>
+    </div>
+
+    <div class="candidate-container right">
+      <div class="box candidate rep" data-candidate="bush">
+        <h2>Bush</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="bush-markers" checked>
+          <label class="onoffswitch-label" for="bush-markers"></label>
+        </div>
+        <img src="img/bush copy.png"></img>
+      </div>
+      <div class="box candidate rep" data-candidate="rubio">
+        <h2>Rubio</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="rubio-markers" checked>
+          <label class="onoffswitch-label" for="rubio-markers"></label>
+        </div>
+        <img src="img/rubio.png"></img>
+      </div>
+      <div class="box candidate rep" data-candidate="fiorina">
+        <h2>Fiorina</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="fiorina-markers" checked>
+          <label class="onoffswitch-label" for="fiorina-markers"></label>
+        </div>
+        <img src="img/fiorina.png"></img>
+      </div>
+      <div class="box candidate rep" data-candidate="cruz">
+        <h2>Cruz</h2>
+        <p>Toggle Markers</p>
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="cruz-markers" checked>
+          <label class="onoffswitch-label" for="cruz-markers"></label>
+        </div>
+        <img src="img/cruz.png"></img>
+      </div>
+    </div>
+
+    <div class="graph-container">
+
+      <div id="tweets-chart-box" class="box graph">
+        <h2>Tweets</h2>
+        <canvas id="tweets-chart" width="590" height="342"></canvas>
+        <!-- <div id="tweets-chart"></div> -->
+      </div>
+
+      <div id="issues-chart-box" class="box graph">
+        <h2>Key Issues</h2>
+        <canvas id="issues-chart" width="590" height="342"></canvas>
+        <!-- <div id="keywords-chart"></div> -->
+      </div>
+
+    </div>
+
+    <div class="sentiment box graph">
+      <h2>Personality Analysis</h2>
+    </div>
+
+
+    <div id="map"></div>
+
+    <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/Chart.js/Chart.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

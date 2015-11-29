@@ -1,0 +1,25 @@
+{
+  "name": "twitter-map",
+  "version": "1.0.0",
+  "description": "map of tweets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node twitter-stream.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:mmallett91/coms6998proj1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.19",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongodb": "*",
+    "node-tweet-stream": "^1.8.3",
+    "request": "^2.67.0",
+    "socket.io": "^1.3.7"
+  }
+}
